@@ -2,10 +2,13 @@ package com.example.rest_api_demo.service.impl;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.example.rest_api_demo.model.CloudVendor;
 import com.example.rest_api_demo.repository.CloudVendorRepository;
 import com.example.rest_api_demo.service.CloudVendorService;
 
+@Service
 public class CloudVendorServiceImpl implements CloudVendorService {
 
 //Initiated a cloudVendorRepository and created a constructor
