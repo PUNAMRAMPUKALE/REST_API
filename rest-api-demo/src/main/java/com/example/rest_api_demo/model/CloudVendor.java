@@ -1,6 +1,14 @@
 package com.example.rest_api_demo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+//if you want different table name than model class
+@Table(name = "cloud_vendor_info")
 public class CloudVendor {
+    @Id
     private String vendorId;
     private String vendorName;
     private String vendorAddress;
